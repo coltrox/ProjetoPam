@@ -1,6 +1,6 @@
 export const colors = {
-  primary: '#28a745', // Verde
-  secondary: '#6c757d', // Cinza
+  primary: '#28a745', 
+  secondary: '#6c757d', 
   white: '#ffffff',
   black: '#000',
   lightGray: '#f0f0f0',

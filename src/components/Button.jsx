@@ -2,13 +2,12 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { colors } from '../constants/colors';
 
-// O botão aceita uma prop "variant" que define seu estilo
+
 const Button = ({ children, onPress, variant = 'primary', style }) => {
-  // Escolhe o estilo do container e do texto com base na variante
   const containerStyle = [
     styles.button,
     variant === 'primary' ? styles.primaryContainer : styles.secondaryContainer,
-    style, // Permite adicionar estilos customizados
+    style, 
   ];
 
   const textStyle = [
@@ -16,7 +15,6 @@ const Button = ({ children, onPress, variant = 'primary', style }) => {
     variant === 'primary' ? styles.primaryText : styles.secondaryText,
   ];
 
-  // Se o "children" for um texto, aplica o estilo, senão, renderiza como está
   const content =
     typeof children === 'string' ? (
       <Text style={textStyle}>{children}</Text>
